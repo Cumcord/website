@@ -1,0 +1,7 @@
+---
+const extraClasses = Astro.props.class ?? "";
+---
+
+<button class={`hover:shadow-xl transition-shadow rounded-full bg-white text-black py-2 px-8 ${extraClasses}`}>
+  <slot />
+</button>

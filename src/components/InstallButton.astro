@@ -1,0 +1,16 @@
+---
+import Button from "./Button.astro";
+const {class: classes} = Astro.props;
+---
+
+<a href="#install" class="install-button">
+  <Button class={classes}>
+    <slot />
+  </Button>
+</a>
+
+<a href="#" class="back-button">
+  <Button class={classes}>
+    <slot />
+  </Button>
+</a>

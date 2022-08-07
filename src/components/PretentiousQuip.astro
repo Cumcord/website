@@ -1,0 +1,19 @@
+---
+const { title, image, reverse } = Astro.props;
+---
+
+<div class={`${reverse ? "bg-gray-100" : "bg-white"} text-nq-black p-28`}>
+
+  <div class={`flex justify-center flex-col-reverse gap-16 ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}>
+    {/* Image shitpost */}
+    {image && <img class="rounded-xl self-center shadow-2xl" src={image}>}
+    {/* Bullshit line */}
+    <div class="self-center">
+      <div class="text-6xl font-bold pb-4 tracking-tighter">{title}</div>
+      <div class="text-lg">
+        <slot />
+      </div>
+    </div>
+  </div>
+
+</div>

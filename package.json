@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "^0.3.0",
+    "@unocss/reset": "^0.45.5",
+    "astro": "1.0.0-rc.7",
+    "astro-uno": "^0.1.5",
+    "sass": "^1.54.3",
+    "unocss": "^0.45.5"
+  }
+}

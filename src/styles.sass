@@ -1,0 +1,31 @@
+@import url("https://rsms.me/inter/inter.css")
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap")
+
+@tailwind base
+@tailwind components
+@tailwind utilities
+
+details > summary
+  list-style: none
+
+  &::-webkit-details-marker
+    display: none
+
+// INSTALL BUTTON CSS FUCKERY
+#install
+  // i think this is the cleanest way to do this -- sink
+  ~ .hero-area, ~ .nav-area
+    --sect-show: none
+    --inst-btn-show: block
+
+    & >
+      .install-section, .back-button
+        display: var(--sect-show)
+
+      .install-button
+        display: var(--inst-btn-show)
+
+  &:target ~
+    .hero-area, .nav-area
+      --sect-show: block
+      --inst-btn-show: none

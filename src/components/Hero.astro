@@ -1,0 +1,80 @@
+---
+import ModItem from "./ModItem.astro";
+import InstallButton from "./InstallButton.astro";
+---
+
+<div class="hero-area flex flex-col pt-24 pb-24 text-center">
+  <div class="font-rubik text-5xl">IMAGINE A PLACE...</div>
+  <div class="pt-8 text-xl leading-snug">
+    <p>...where you can cum everywhere, with friends.</p>
+    <p>Where just you and a handful of friends can nut everywhere.</p>
+    <p>A place where you can cum wherever you want.</p>
+  </div>
+
+  <InstallButton class="w-48 mx-auto my-4 h-12">Install Cumcord</InstallButton>
+
+  <div class="install-section">
+    <div class="flex items-center justify-center">
+      <div class="w-[34rem] bg-dn-black p-6 rounded-md">
+        <div class="mb-4">
+          <h3 class="text-white text-3xl weight font-semibold text-center">
+            What client mod do you use?
+          </h3>
+        </div>
+        <div class="flex flex-col gap-2">
+          <ModItem title="BetterDiscord">
+            BetterDiscord users can install Cumcord by adding
+            <a class="text-blurple"
+              href="https://raw.githubusercontent.com/Ruthenic/bbd-plugins/master/cumcord/cumcord-loader.plugin.js">this
+              plugin</a>
+            to their BetterDiscord plugins folder.
+          </ModItem>
+          <ModItem title="Powercord">
+            Powercord users can install Cumcord by cloning
+            <a href="https://github.com/hyblocker/pc-cumcord-loader" class="text-blurple">this repository</a>
+            to their Powercord plugins folder.
+          </ModItem>
+          <ModItem title="GooseMod">
+            GooseMod users can install Cumcord by going to the GM Store,
+            clicking the cloud item in the top right, and adding this repo:
+            <p>
+              <code class="bg-nq-black p-1">https://goose.lexisother.tk/nova.json</code>
+            </p>
+            After adding the repo, search for CumcordLoader in the plugin store
+            and add the plugin.
+          </ModItem>
+          <ModItem title="Astra">
+            Astra users can install Cumcord by cloning
+            <a href="https://github.com/AlyPlugs/CumcordLoader" class="text-blurple">this repository</a>
+            to their Astra plugins folder.
+          </ModItem>
+          <ModItem title="Vizality">
+            Vizality users can install Cumcord by cloning
+            <a href="https://github.com/doggybootsy/CumcordLoader" class="text-blurple">this repository</a>
+            to their Vizality plugins folder.
+          </ModItem>
+          <ModItem title="Kernel">
+            Kernel users can install Cumcord by adding the CumcordLoader package
+            from
+            <a href="https://github.com/kernel-mod/packages" class="text-blurple">this repo</a> to
+            their packages folder.
+          </ModItem>
+
+          <ModItem title="OpenAsar">
+            OpenAsar's js injection can inject Cumcord.
+            <br />
+            Add
+            <a href="https://snakeb.in/#O5Tn2o_T.json" class="text-blurple">this</a>
+            to the "openasar" part of your settings.json, so that it looks like
+            <a href="https://snakeb.in/#C6uoB1cw.json" class="text-blurple">this</a>.
+          </ModItem>
+
+          <ModItem title="I don't use a client mod!">
+            Cumcord has a desktop installer that works without an existing client mod <a
+              href="https://github.com/Cumcord/Impregnate/releases/latest" class="text-blurple">here</a>.
+          </ModItem>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

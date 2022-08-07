@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PretentiousQuip from "../components/PretentiousQuip.astro";
+import Nav from "../components/Nav.astro";
+import Hero from "../components/Hero.astro";
+
+import codcum from "/assets/screenshots/codcum.png";
+import cumsnow from "/assets/screenshots/cumsnow.png";
+import discordmerch from "/assets/screenshots/discordmerch.png"
+import fight from "/assets/screenshots/fight.png"
+---
+
+<BaseLayout title="Home">
+  <div class="bg-blurple">
+    <a id="install"></a>
+    <Nav />
+    <Hero />
+  </div>
+
+  <PretentiousQuip title="Talk about cum" image={codcum}>
+    Cumming with friends is always more fun!
+  </PretentiousQuip>
+
+  <PretentiousQuip reverse title="Hang out with furries" image={cumsnow}>
+    We love degenerates here so much, we even have a role for it!
+  </PretentiousQuip>
+
+  <PretentiousQuip title="Participate in consumerism" image={discordmerch}>
+    {Array(261).join("BUY ")}
+  </PretentiousQuip>
+
+  <PretentiousQuip reverse title="Fight to the death" image={fight}>
+    Suffering is absolutely necessary.
+  </PretentiousQuip>
+
+  <em>
+    <PretentiousQuip>
+      [This joke has been removed on behalf of Hammer and Chisel Inc.]
+    </PretentiousQuip>
+  </em>
+</BaseLayout>
