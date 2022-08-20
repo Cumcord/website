@@ -10,6 +10,15 @@ import discordmerch from "/assets/screenshots/discordmerch.png"
 import fight from "/assets/screenshots/fight.png"
 ---
 
+<script type="module">
+  const days = await (await fetch("https://dayssincecommandsbrokeapi.deno.dev/")).json().days.toString()
+  document.getElementById("day-count").innerText = days.toString();
+
+  if (parseInt(days) == 1) {
+    document.getElementById("days").innerText = "day"
+  }
+</script>
+
 <BaseLayout title="Home">
   <div class="bg-blurple">
     <a id="install"></a>
@@ -33,8 +42,14 @@ import fight from "/assets/screenshots/fight.png"
     Suffering is absolutely necessary.
   </PretentiousQuip>
 
+  <PretentiousQuip>
+    <div class="text-3xl tracking-tighter">
+      It has been <span class="font-semibold"><span class="text-red-600" id="day-count">0</span> <span id="days">days</span></span> since commands broke.
+    </div>
+  </PretentiousQuip>
+
   <em>
-    <PretentiousQuip>
+    <PretentiousQuip reverse>
       [This joke has been removed on behalf of Hammer and Chisel Inc.]
     </PretentiousQuip>
   </em>

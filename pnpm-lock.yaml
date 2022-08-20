@@ -1,4 +1,4 @@
-lockfileVersion: 5.4
+lockfileVersion: 5.3
 
 specifiers:
   '@astrojs/sitemap': ^0.3.0
@@ -12,7 +12,7 @@ devDependencies:
   '@astrojs/sitemap': 0.3.0
   '@unocss/reset': 0.45.5
   astro: 1.0.0-rc.7_sass@1.54.3
-  astro-uno: 0.1.5_2fxfonb4emgvsoscqa7yg2ghqe
+  astro-uno: 0.1.5_astro@1.0.0-rc.7+unocss@0.45.5
   sass: 1.54.3
   unocss: 0.45.5
 
@@ -806,7 +806,7 @@ packages:
       tslib: 2.4.0
     dev: true
 
-  /astro-uno/0.1.5_2fxfonb4emgvsoscqa7yg2ghqe:
+  /astro-uno/0.1.5_astro@1.0.0-rc.7+unocss@0.45.5:
     resolution: {integrity: sha512-rLMJuwRdy9VDQJQc5Y0kak/4NQ2r7JKlthnRfdj62UyLG2Aa854COYSnsqQqzZERFmFA+FpA4+65svPnocIyzg==}
     peerDependencies:
       astro: ^1.0.0-beta.42
