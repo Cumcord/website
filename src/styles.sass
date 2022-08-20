@@ -1,10 +1,6 @@
 @import url("https://rsms.me/inter/inter.css")
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap")
 
-@tailwind base
-@tailwind components
-@tailwind utilities
-
 details > summary
   list-style: none
 
@@ -16,11 +12,15 @@ details > summary
   // i think this is the cleanest way to do this -- sink
   ~ .hero-area, ~ .nav-area
     --sect-show: none
-    --inst-btn-show: block
+    --inst-back-btn-show: none
+    --inst-btn-show: flex
 
     & >
-      .install-section, .back-button
+      .install-section
         display: var(--sect-show)
+
+      .back-button
+        display: var(--inst-back-btn-show)
 
       .install-button
         display: var(--inst-btn-show)
@@ -28,4 +28,5 @@ details > summary
   &:target ~
     .hero-area, .nav-area
       --sect-show: block
+      --inst-back-btn-show: flex
       --inst-btn-show: none

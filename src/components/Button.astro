@@ -2,6 +2,6 @@
 const extraClasses = Astro.props.class ?? "";
 ---
 
-<button class={`hover:shadow-xl transition-shadow rounded-full bg-white text-black py-2 px-8 ${extraClasses}`}>
+<a href={Astro.props.href} class={`hover:shadow-xl transition-shadow rounded-full bg-white text-black py-2 px-8 justify-center items-center ${extraClasses}`}>
   <slot />
-</button>
+</a>
