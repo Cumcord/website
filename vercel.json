@@ -6,5 +6,11 @@
     "source": "/build.js",
     "destination": "https://raw.githubusercontent.com/Cumcord/builds/main/build.js",
     "permanent": true
+  }],
+  "headers": [{
+    "source": "/build.js",
+    "headers": [
+      { "key": "Access-Control-Allow-Origin", "value": "*" }
+    ]
   }]
 }
