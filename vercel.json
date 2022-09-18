@@ -1,5 +1,10 @@
 {
   "github": {
     "silent": true
-  }
+  },
+  "redirects": [{
+    "source": "/build.js",
+    "destination": "https://raw.githubusercontent.com/Cumcord/builds/main/build.js",
+    "permanent": true
+  }]
 }
